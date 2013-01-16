@@ -52,6 +52,12 @@ if (Meteor.isClient) {
   inherit(TemplatePlugin, SimpleForm);
 
   _.extend(SimpleForm.prototype, {
+    helpers: {
+      errorFor: function (plugin, fieldName, options) {
+        return "Some error message goes here";
+      }
+    },
+
     events: {
       "submit form": function (e, tmpl) {
         e.preventDefault();

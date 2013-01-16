@@ -12,6 +12,9 @@
 <template name="myForm">
   <form class="form">
     <div>
+      <div class="error">
+        {{errorFor 'name'}}
+      </div>
       <input type="text" name="name" id="form-name" value="Submit me baby!" />
     </div>
     <div>
