@@ -54,6 +54,7 @@ if (Meteor.isClient) {
   _.extend(SimpleForm.prototype, {
     helpers: {
       errorFor: function (plugin, fieldName, options) {
+        console.log('helper args', arguments);
         return "Some error message goes here";
       }
     },
