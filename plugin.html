@@ -1,0 +1,24 @@
+<head>
+  <title>Pluggable Meteor Templates</title>
+</head>
+
+<body>
+  <div class="container">
+    <h4>Submit the form and inspect the console</h4>
+    {{> myForm}}
+  </div>
+</body>
+
+<template name="myForm">
+  <form class="form">
+    <div>
+      <input type="text" name="name" id="form-name" value="Submit me baby!" />
+    </div>
+    <div>
+      <input type="text" name="details" id="form-name" value="Some details" />
+    </div>
+    <div class="form-actions">
+      <input type="submit" class="btn" name="" id="" value="Save" />
+    </div>
+  </form>
+</template>

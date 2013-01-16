@@ -1,0 +1,9 @@
+{
+  "meteor": {
+    "path": "/Users/cmather/code/meteor"
+  },
+  "dependencies": {
+    "basePackages": {},
+    "packages": {}
+  }
+}
